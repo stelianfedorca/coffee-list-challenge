@@ -1,38 +1,34 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+:root {
+  --black: #111315;
+  --card-color: #1B1D1F;
+  --primary: #FEF7EE;
+  --secondary: #6F757C;
+  --price: #BEE3CC;
+  --sold-out-text: #ED735D;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--black);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* justify-content: center;
+  align-items: center; */
 }
