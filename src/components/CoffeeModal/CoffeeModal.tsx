@@ -87,18 +87,38 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 400px;
+  max-width: 1200px;
+  margin: 72px;
+  /* margin: 0; */
   background-color: #1b1d1f;
   gap: 20px;
   padding: 70px 100px;
   border-radius: 16px;
   margin-top: 100px;
+
+  @media ${props => props.theme.queries.phoneAndDown} {
+    /* padding: 70px 0px; */
+  }
 `;
 
 const Header = styled.header`
-  max-width: 500px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* text-align: center;
+  width: 50%; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+  flex: 1; */
 `;
 
 const RowButtons = styled.div`
@@ -109,6 +129,7 @@ const RowButtons = styled.div`
 
 const Main = styled.main`
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 40px;
 `;
@@ -116,10 +137,14 @@ const Main = styled.main`
 const Title = styled.h1`
   color: var(--primary);
   align-self: center;
+  flex-wrap: wrap;
 `;
 
-const Subtitle = styled.h2`
+const Subtitle = styled.h4`
   color: var(--secondary);
+  text-align: center;
+  font-weight: 700;
+  /* font-weight: light; */
 `;
 
 const DefaultButton = styled.button`
@@ -130,7 +155,7 @@ const DefaultButton = styled.button`
   background-color: ${props => props.color};
   cursor: pointer;
 
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease;
 `;
 
 const SelectedButton = styled(DefaultButton)``;

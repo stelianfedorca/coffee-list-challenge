@@ -13,5 +13,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 30px;
-  transition: all 1500ms;
+
+  @media ${props => props.theme.queries.tabletAndDown} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media ${props => props.theme.queries.phoneAndDown} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

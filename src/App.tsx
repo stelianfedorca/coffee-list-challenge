@@ -1,15 +1,17 @@
-import React from 'react';
 import './App.css';
-import { Card, CardGrid, CoffeeModal } from './components';
+import { ThemeProvider } from 'styled-components';
 
-import data from './data.json';
-import { CardProps } from './components/Card/Card';
+import { CoffeeModal } from './components';
+import { QUERIES } from './utils/constants';
+import { CoffeeListPage } from './pages/CoffeeListPage';
 
 function App() {
   return (
-    <div className="App">
-      <CoffeeModal />
-    </div>
+    <ThemeProvider theme={{ queries: QUERIES }}>
+      <div className="App">
+        <CoffeeModal />
+      </div>
+    </ThemeProvider>
   );
 }
 

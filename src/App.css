@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -6,8 +7,16 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 400;
+}
+
 html, body, #root {
   height: 100%;
+  background-color: var(--black);
+  font-family: 'DM_Sans';
 }
 
 input, button, textarea, select {
@@ -24,11 +33,8 @@ input, button, textarea, select {
 }
 
 .App {
-  background-color: var(--black);
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center;
-  align-items: center; */
 }
