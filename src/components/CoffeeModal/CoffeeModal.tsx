@@ -143,7 +143,7 @@ const Title = styled.h1`
 const Subtitle = styled.h4`
   color: var(--secondary);
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   /* font-weight: light; */
 `;
 

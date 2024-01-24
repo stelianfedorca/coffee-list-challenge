@@ -7,16 +7,16 @@
   margin: 0;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'DM_Sans';
   src: url('./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
   font-weight: 400;
-}
+} */
 
 html, body, #root {
   height: 100%;
   background-color: var(--black);
-  font-family: 'DM_Sans';
+  font-family: 'DM Sans';
 }
 
 input, button, textarea, select {
